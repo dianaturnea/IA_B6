@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<images>
+	<algorithm>nume_algoritm/clasificator</algorithm>
+    <image name="nume_original_img.extensie">
+    	<data>
+        	<feeling position="1">sentiment</feeling>//in cazul in care agl returneaza un top de sentimente,pozitia reprezinta locul acesteia(1,2,3)
+        	<percent>2</percent>//la fel ca si position, daca alg nu returneaza procentul predominant sau pozitia nu este nevoie de fie adaugat
+    	</data>
+    	//daca alg returneaza mai multe sentimente se va pastra aceiasi notare ca mai sus <data>...</data>
+    	//...
+    </image>
+    
+</images>
+ 
+ ATENTIE: daca doriti sa adaugati in acelas xml toate datele de la setul de imagini sau sa creati cate un xml pentru fiecare imagine 
+ aveti liber sa o faceti, rugamintea mea este sa fie toata in acelas folder. INSIST ca numele imagini sa fie cel din folderul de testere(unic)
