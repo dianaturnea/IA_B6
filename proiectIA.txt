@@ -1,0 +1,10 @@
+Echipe:
+1. Adnotare - strange resurse - imagini
+ - se poate face un program care sa preia imaginile si le adnoteaza
+2. Extragere trasaturi - ar fi utile niste informatii suplimentare despre imagini
+ - local color histogram LCH
+ - GCH - global color histogram
+ - SIFT - log-of-visual-term features
+3. Retea neuronala
+ - clasificator bazat pe retea neuronala - R, TensorFlow, Caffe, ...etc.
+4. Alte tipuri de clasificatori - SVM, Regresie Liniara, etc.

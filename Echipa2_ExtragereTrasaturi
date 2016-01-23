@@ -1,0 +1,4 @@
+2. Extragere trasaturi - ar fi utile niste informatii suplimentare despre imagini
+ - local color histogram LCH
+ - GCH - global color histogram
+ - SIFT - log-of-visual-term features
