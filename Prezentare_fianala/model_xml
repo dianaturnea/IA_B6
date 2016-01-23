@@ -14,3 +14,25 @@
  
  ATENTIE: daca doriti sa adaugati in acelas xml toate datele de la setul de imagini sau sa creati cate un xml pentru fiecare imagine 
  aveti liber sa o faceti, rugamintea mea este sa fie toata in acelas folder. INSIST ca numele imagini sa fie cel din folderul de testere(unic)
+Descrierea sentimentelor va fi in engleza: 
+1: "acceptance"
+2: "admiration"	
+3: "amazement"
+4: "anger"
+5: "annoyance"
+6: "anticipation"
+7: "boredom"
+8: "disgust"
+9: "ecstasy"
+10: "fear"
+11: "grief"
+12: "interest"
+13: "joy"
+14: "rage"
+15: "sadness"
+16: "serenity"
+17: "surprise"
+18: "terror"
+19: "trust"
+20: "neutral"
+Chat Conversation End
