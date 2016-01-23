@@ -1,5 +1,6 @@
 __author__ = "Nichi Hash"
-
+import xml.etree.cElementTree as ET
+import xml.dom.minidom
 
 
 file1 = open ("file1.txt")  #file containing image names
@@ -96,6 +97,56 @@ parsefeeling = {
 
 
 
+
+
+
+root = ET.Element("images")
+alg = ET.SubElement(root, "algorithm")
+alg.text = "SVM"
+
 for i in range(images.__len__()): #both files are supposed to have equal numbers of lines
-    feel = int(feelings[i])
-    print images[i], parsefeeling[feel]()
+    imgnode = ET.SubElement(root, "image", name=images[i].rstrip())
+    data = ET.SubElement(imgnode, "data")
+    ET.SubElement(data, "feeling", position="1").text = parsefeeling[int(feelings[i])]()
+
+
+
+
+tree = ET.ElementTree(root)
+tree.write("feelings.xml")
+
+xml = xml.dom.minidom.parse("feelings.xml")
+pretty_xml_as_string = xml.toprettyxml()
+
+print pretty_xml_as_string
+
+
+
+
+
+
+
+# EXAMPLE OF OUTPUT:
+# /usr/bin/python2.7 /home/hash/Documents/generatexml/generatexml.py
+# <?xml version="1.0" ?>
+# <images>
+# 	<algorithm>SVM</algorithm>
+# 	<image name="imagine1.jpg">
+# 		<data>
+# 			<feeling position="1">acceptance</feeling>
+# 		</data>
+# 	</image>
+# 	<image name="imagine2.jpg">
+# 		<data>
+# 			<feeling position="1">admiration</feeling>
+# 		</data>
+# 	</image>
+# 	<image name="imagine3.jpg">
+# 		<data>
+# 			<feeling position="1">amazement</feeling>
+# 		</data>
+# 	</image>
+# </images>
+# 
+# 
+# Process finished with exit code 0
